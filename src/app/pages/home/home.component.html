@@ -1,1 +1,41 @@
-<h1>PAGE WORKS</h1>
+<div class="home">
+    <div class="content">
+      <div class="search">
+        
+        <button type="send">
+            <i class="material-icons edit" >
+                search
+            </i>
+        </button>
+        <form class="forms">
+            <input class="input-cpf" matInput placeholder="CPF" name="cpf"/>
+        </form>
+      </div>
+    </div>
+    <button class="btn-add-new-user">
+        <h2>Adicionar</h2>
+    </button>
+    <div class="title">
+      <h2>Meus anucios</h2>
+    </div>
+    <ul class="users-list"> 
+      <li class="user">
+        <div class="options-user">
+            <a routerLink="/users/update/">
+                <i class="material-icons edit" >
+                    edit
+                </i>
+            </a>
+            <a routerLink="/users">
+                <i class="material-icons remove" >
+                    delete
+                </i>
+            </a>
+        </div>
+        <p>ID</p>
+        <p>NAME</p>
+        <p>EMAIL</p>
+        <p>CPF</p>
+      </li>
+    </ul>
+  </div>

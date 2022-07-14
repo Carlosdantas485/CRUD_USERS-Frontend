@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavComponent } from './componentes/nav/nav.component';
 
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,9 @@ import { NavComponent } from './componentes/nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatAutocompleteModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
