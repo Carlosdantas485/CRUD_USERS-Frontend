@@ -20,9 +20,11 @@
       <h1>Lista de usuários</h1>
     </div>
     <ul class="users-list"> 
-      <li class="user">
+      <li class="user"
+      *ngFor="let user of users"
+      >
         <div class="options-user">
-            <a routerLink="/edit">
+            <a routerLink="/edit/{{ user.id}}">
                 <i class="material-icons edit" >
                     edit
                 </i>
@@ -33,10 +35,10 @@
                 </i>
             </a>
         </div>
-        <p>ID</p>
-        <p>NAME</p>
-        <p>EMAIL</p>
-        <p>CPF</p>
+        <p>NÚMERO DA CONTA: {{user.id}}</p>
+        <p>NOME: {{user.name}}</p>
+        <p>EMAIL: {{user.email}}</p>
+        <p>CPF: {{user.cpf}}</p>
       </li>
     </ul>
   </div>
