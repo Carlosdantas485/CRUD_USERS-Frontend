@@ -43,6 +43,8 @@
 .search > button{
     background-color: transparent;
     width: 40px;
+    box-shadow: none;
+
 }
 
 .search > button > i {
@@ -51,10 +53,10 @@
 
 .btn-add-new-user{
     margin-top: 10px;
-    box-shadow: 1px 1px 5px 1px rgb(56, 56, 56);
 }
 
 .title{
+    margin-top: 10px;
     width: 70vw;
 }
 
@@ -70,7 +72,7 @@
     margin: 5px;
     width: 300px;
     padding: 10px;
-    background-color: rgb(56, 154, 211);
+    background-color: rgb(78, 173, 228);
     box-shadow: 1px 1px 5px 1px rgb(56, 56, 56);
 
 }
