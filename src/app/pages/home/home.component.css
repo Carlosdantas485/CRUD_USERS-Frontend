@@ -22,8 +22,6 @@
     width: 100%;
     height: 30px;
     background-color: transparent;
-    border: none;
-    border-bottom: 1px solid black;
 }
 
 .forms > input::placeholder{

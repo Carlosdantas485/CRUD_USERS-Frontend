@@ -35,9 +35,18 @@ input{
     height: 30px;
     margin-bottom: 10px;
     width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+input::placeholder{
+    color: white;
 }
 
 a{
     text-decoration: none;
 }
+
+
 
