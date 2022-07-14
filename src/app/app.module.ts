@@ -8,11 +8,14 @@ import { NavComponent } from './componentes/nav/nav.component';
 
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
+import { CreateUserComponent } from './pages/create-user/create-user.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
