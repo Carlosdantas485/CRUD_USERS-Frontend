@@ -9,12 +9,15 @@
     <div class="card">
         <h1>CADASTRAR USUÁRIO</h1>
         <form class="forms">
-            <input placeholder="NOME" name="name"/>
-            <input placeholder="E-MAIL" name="email"/>
-            <input placeholder="CPF" name="cpf"/>
+            <input placeholder="NOME" name="name"
+            [(ngModel)]="user.name" />
+            <input placeholder="E-MAIL" name="email"
+            [(ngModel)]="user.email"/>
+            <input placeholder="CPF" name="cpf"
+            [(ngModel)]="user.cpf"/>
         </form>
         <a routerLink="/">
-            <button>ENVIAR</button>
+            <button (click)="createUser()">ENVIAR</button>
         </a>
     </div>
 </div>

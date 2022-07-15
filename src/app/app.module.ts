@@ -14,6 +14,8 @@ import { CreateUserComponent } from './pages/create-user/create-user.component';
 import { EditUserComponent } from './pages/edit-user/edit-user.component';
 
 import { MatSnackBarModule} from '@angular/material/snack-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { MatSnackBarModule} from '@angular/material/snack-bar';
     AppRoutingModule,
     MatAutocompleteModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
+import { User } from '../user.model';
 
 @Component({
   selector: 'app-create-user',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-user.component.css']
 })
 export class CreateUserComponent implements OnInit {
-
-  constructor() { }
+  user: User = {
+    name: null,
+    email: null,
+    cpf: null,
+  }
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+  }
+
+  createUser():void{
+    this.userService.create(this.user).subscribe(()=> {
+      this.userService.showMesage("Operacao bem susedida")
+      console.log(this.user)
+    })
   }
 
 }

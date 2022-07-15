@@ -22,6 +22,10 @@ export class UserService {
     })
   }
 
+  create(user: User): Observable<User>{
+    return this.http.post<User>(this.BASE_URL, user)
+  }
+  
   readUsers(): Observable<User[]>{
     return this.http.get<User[]>(this.BASE_URL)
   }
