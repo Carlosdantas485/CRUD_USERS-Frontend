@@ -4,23 +4,22 @@
             <button>VOLTAR</button>
         </a>
     </div>
-
-    
     <div class="card">
         <h1>EDITAR USUÁRIO</h1>
         <div class="user">
-            <p>NUMERO DA CONTA: 1</p>
-            <p>NAME: Carlos Alberto Dantas Filho</p>
-            <p>E-MAIL: carlosdantas485@gamil.com</p>
-            <p>CPF: 12345678912</p>
+            <p>NUMERO DA CONTA: {{user.id}} </p>
+            
         </div>
         <form class="forms">
-            <input placeholder="NOME" name="name"/>
-            <input placeholder="E-MAIL" name="email"/>
-            <input placeholder="CPF" name="cpf"/>
+            <input placeholder="NOME" name="name"
+            [(ngModel)]="user.name"/>
+            <input placeholder="E-MAIL" name="email"
+            [(ngModel)]="user.email"/>
+            <input placeholder="CPF" name="cpf"
+            [(ngModel)]="user.cpf"/>
         </form>
         <a routerLink="/">
-            <button>ENVIAR</button>
+            <button (click)="updateUser()">ENVIAR</button>
         </a>
     </div>
 </div>

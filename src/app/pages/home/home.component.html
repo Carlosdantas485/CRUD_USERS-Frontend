@@ -24,15 +24,17 @@
       *ngFor="let user of users"
       >
         <div class="options-user">
-            <a routerLink="/edit/{{ user.id}}">
+            <a routerLink="/edit/{{user.id}}">
                 <i class="material-icons edit" >
                     edit
                 </i>
             </a>
-            <a routerLink="/users">
+            <a>
+              <button >
                 <i class="material-icons remove" >
-                    delete
-                </i>
+                  delete
+              </i>
+              </button>
             </a>
         </div>
         <p>NÚMERO DA CONTA: {{user.id}}</p>

@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { map, catchError } from 'rxjs/operators';
 
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Observable } from 'rxjs';
+import { Observable, EMPTY } from 'rxjs';
 import { User } from './user.model';
 
 @Injectable({
@@ -16,7 +17,7 @@ export class UserService {
 
   showMesage(msg: string): void{
     this.snackBar.open(msg, 'X', {
-      duration: 900,
+      duration: 2000,
       horizontalPosition: "right",
       verticalPosition: "top"
     })
@@ -25,9 +26,26 @@ export class UserService {
   create(user: User): Observable<User>{
     return this.http.post<User>(this.BASE_URL, user)
   }
-  
+
   readUsers(): Observable<User[]>{
     return this.http.get<User[]>(this.BASE_URL)
   }
 
+  readUsersbyID(id: number): Observable<User>{
+    const url = `${this.BASE_URL}/${id}`
+    return this.http.get<User>(url)
+  }
+
+  update(product: User): Observable<User> {
+    const url: string = `${this.BASE_URL}/${product.id}`;
+    return this.http.put<User>(url, product).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
+  }
+
+  errorHandler(e: any): Observable<any> {
+    this.showMesage('Ocorreu um erro!');
+    return EMPTY;
+  }
 }

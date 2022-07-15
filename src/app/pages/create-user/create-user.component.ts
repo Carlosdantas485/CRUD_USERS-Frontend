@@ -20,7 +20,7 @@ export class CreateUserComponent implements OnInit {
 
   createUser():void{
     this.userService.create(this.user).subscribe(()=> {
-      this.userService.showMesage("Operacao bem susedida")
+      this.userService.showMesage("Usuário criado")
       console.log(this.user)
     })
   }
