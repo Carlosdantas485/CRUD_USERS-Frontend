@@ -28,7 +28,7 @@ export class DeleteUserComponent implements OnInit {
   }
 
   deleteUser(): void{
-    this.userService.delete(this.user.id).subscribe(()=>{
+    this.userService.delete(this.user.cpf).subscribe(()=>{
       this.userService.showMesage("Ususario excluido com sucesso!")
     });
   }

@@ -58,8 +58,9 @@ export class UserService {
     return EMPTY;
   }
 
-  delete(id: number): Observable<User>{
-    const url = `${this.BASE_URL}/${id}`;
+  delete(cpf: number): Observable<User>{
+    const url = `${this.BASE_URL}/${cpf}`;
+    console.log(url)
     return this.http.delete<User>(url);
   }
 
