@@ -6,6 +6,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable, EMPTY } from 'rxjs';
 import { User } from './user.model';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -36,9 +37,17 @@ export class UserService {
     return this.http.get<User>(url)
   }
 
-  update(product: User): Observable<User> {
-    const url: string = `${this.BASE_URL}/${product.id}`;
-    return this.http.put<User>(url, product).pipe(
+  readUsersbyCpf(cpf: number): Observable<User>{
+    const url = `${this.BASE_URL}/cpf/${cpf}`
+    console.log(url)
+    
+    return this.http.get<User>(url)
+
+  }
+
+  update(user: User): Observable<User> {
+    const url: string = `${this.BASE_URL}/${user.cpf}`;
+    return this.http.put<User>(url, user).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );

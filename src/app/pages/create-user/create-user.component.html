@@ -2,11 +2,11 @@
     <div class="card">
         <h1>CADASTRAR USUÁRIO</h1>
         <form class="forms">
-            <input placeholder="NOME" name="name"
+            <input placeholder="NOME" name="name" required
             [(ngModel)]="user.name" />
-            <input placeholder="E-MAIL" name="email"
+            <input placeholder="E-MAIL" name="email" required
             [(ngModel)]="user.email"/>
-            <input placeholder="CPF" name="cpf"
+            <input placeholder="CPF" name="cpf" required
             [(ngModel)]="user.cpf"/>
         </form>
         <div class="options-box">

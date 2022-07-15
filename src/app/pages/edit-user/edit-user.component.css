@@ -49,6 +49,13 @@
     margin-top: 20px;
 }
 
+.input-forms{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .options-box{
     margin-top: 20px;
     width: 100%;
@@ -63,4 +70,9 @@
 
 .btn-cancel{
     background-color:  #990827;
+}
+
+p{
+    width: 70px;
+    margin: 0;
 }

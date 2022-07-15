@@ -1,17 +1,18 @@
 <div class="edit">
     <div class="card">
         <h1>EDITAR USUÁRIO</h1>
-        <div class="user">
-            <p>NUMERO DA CONTA: {{user.id}} </p>
-            
-        </div>
+        
         <form class="forms">
-            <input placeholder="NOME" name="name"
-            [(ngModel)]="user.name"/>
-            <input placeholder="E-MAIL" name="email"
+            <div class="input-forms">
+                <p>NOME</p>
+                <input placeholder="NOME" name="name"
+                [(ngModel)]="user.name"/>
+            </div>
+            <div class="input-forms">
+                <p>E-MAIl</p>
+                <input placeholder="E-MAIL" name="email"
             [(ngModel)]="user.email"/>
-            <input placeholder="CPF" name="cpf"
-            [(ngModel)]="user.cpf"/>
+            </div>
         </form>
         <div class="options-box">
             <a routerLink="/">

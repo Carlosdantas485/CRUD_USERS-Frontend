@@ -10,7 +10,8 @@ import { User } from '../user.model';
 export class HomeComponent implements OnInit {
 
   user: User[]
-
+  values = '';
+  users: User;
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
@@ -19,7 +20,16 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  readUsersbyCpf(event: any):void{
+    this.values = event.target.value ;
+    
+    let cpf = parseInt(this.values)
+    this.userService.readUsersbyCpf(cpf).subscribe(user => {
+      this.users = user
+    })
 
+    
+  }
   
 
 }
