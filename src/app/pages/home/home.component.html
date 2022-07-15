@@ -21,7 +21,7 @@
     </div>
     <ul class="users-list"> 
       <li class="user"
-      *ngFor="let user of users"
+      *ngFor="let user of user"
       >
         <div class="options-user">
             <a routerLink="/edit/{{user.id}}">
@@ -31,8 +31,8 @@
                 </i>
               </button>
             </a>
-            <a>
-              <button class="option">
+            <a routerLink="/delete/{{user.id}}">
+              <button class="option" >
                 <i class="material-icons remove" >
                   delete
               </i>

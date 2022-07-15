@@ -48,4 +48,13 @@ export class UserService {
     this.showMesage('Ocorreu um erro!');
     return EMPTY;
   }
+
+  delete(id: number): Observable<User>{
+    const url = `${this.BASE_URL}/${id}`;
+    return this.http.delete<User>(url);
+  }
+
+  reloadPage():void{
+    location.reload()
+  }
 }

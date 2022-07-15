@@ -15,6 +15,7 @@ import { EditUserComponent } from './pages/edit-user/edit-user.component';
 
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DeleteUserComponent } from './pages/delete-user/delete-user.component';
 
 
 
@@ -24,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     NavComponent,
     CreateUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    DeleteUserComponent
   ],
   imports: [
     BrowserModule,

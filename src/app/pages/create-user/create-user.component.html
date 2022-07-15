@@ -5,7 +5,6 @@
             <button>VOLTAR</button>
         </a>
     </div>
-    
     <div class="card">
         <h1>CADASTRAR USUÁRIO</h1>
         <form class="forms">
@@ -16,8 +15,14 @@
             <input placeholder="CPF" name="cpf"
             [(ngModel)]="user.cpf"/>
         </form>
-        <a routerLink="/">
-            <button (click)="createUser()">ENVIAR</button>
-        </a>
+        <div class="options-box">
+            <a routerLink="/">
+                <button class="btn-send" (click)="createUser()">ENVIAR</button>
+            </a>
+            <a routerLink="/" >
+                <button class="btn-cancel">CANCELAR</button>
+            </a>
+        </div>
+        
     </div>
 </div>

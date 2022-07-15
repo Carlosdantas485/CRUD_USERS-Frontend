@@ -47,3 +47,18 @@
 .forms{
     margin-top: 20px;
 }
+
+.options-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.options-box > a {
+    margin-top: 10px;
+}
+
+.btn-cancel{
+    background-color:  #990827;
+}

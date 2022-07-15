@@ -1,4 +1,4 @@
-.create{
+.delete{
     width: 100%;
     height: 100%;
     display: flex;
@@ -6,7 +6,6 @@
     justify-content: center;
     flex-direction: column;
 }
-
 
 .option-back{
     width: 50vw;
@@ -23,21 +22,9 @@
     background-color: #389AD3;
 }
 
-.card > form{
+.card > .user {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.card  > a {
-    width: 100%;
-}
-
-.card > a > button{
-    margin-top: 10px;
-    width: 100%;
+    padding: 5px;
 }
 
 .options-box{

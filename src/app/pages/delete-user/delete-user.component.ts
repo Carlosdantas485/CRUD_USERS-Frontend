@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { UserService } from '../user.service';
-import { ActivatedRoute} from '@angular/router';
 import { User } from '../user.model';
+import { ActivatedRoute} from '@angular/router';
+
 
 @Component({
-  selector: 'app-update-user',
-  templateUrl: './edit-user.component.html',
-  styleUrls: ['./edit-user.component.css']
+  selector: 'app-delete-user',
+  templateUrl: './delete-user.component.html',
+  styleUrls: ['./delete-user.component.css']
 })
-
-export class EditUserComponent implements OnInit {
+export class DeleteUserComponent implements OnInit {
 
   user: User;
 
-  constructor( 
+  constructor(
     private userService: UserService, 
     private route: ActivatedRoute
   ) { }
@@ -26,10 +27,9 @@ export class EditUserComponent implements OnInit {
     });
   }
 
-  updateUser(): void {
-    this.userService.update(this.user).subscribe(() => {
-      this.userService.showMesage('Usuário atualizado com sucesso!');
-      
+  deleteUser(): void{
+    this.userService.delete(this.user.id).subscribe(()=>{
+      this.userService.showMesage("Ususario excluido com sucesso!")
     });
   }
 }

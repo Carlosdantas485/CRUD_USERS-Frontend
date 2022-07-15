@@ -18,8 +18,13 @@
             <input placeholder="CPF" name="cpf"
             [(ngModel)]="user.cpf"/>
         </form>
-        <a routerLink="/">
-            <button (click)="updateUser()">ENVIAR</button>
-        </a>
+        <div class="options-box">
+            <a routerLink="/">
+                <button (click)="updateUser()">EDITAR</button>
+            </a>
+            <a routerLink="/" >
+                <button class="btn-cancel" >CANCELAR</button>
+            </a>
+        </div>
     </div>
 </div>
