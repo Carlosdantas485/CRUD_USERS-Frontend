@@ -3,10 +3,10 @@ a,h1{
 }
 .home{
     width: 100%;
+    min-height: 30vw;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
