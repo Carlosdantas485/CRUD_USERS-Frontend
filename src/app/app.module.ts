@@ -16,6 +16,8 @@ import { EditUserComponent } from './pages/edit-user/edit-user.component';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DeleteUserComponent } from './pages/delete-user/delete-user.component';
+import { HeaderComponent } from './componentes/header/header.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 
 
@@ -26,7 +28,9 @@ import { DeleteUserComponent } from './pages/delete-user/delete-user.component';
     NavComponent,
     CreateUserComponent,
     EditUserComponent,
-    DeleteUserComponent
+    DeleteUserComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
