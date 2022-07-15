@@ -3,6 +3,7 @@
 html, body { height: 100%; }
 body { 
     margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: #1f112c;
 }
 
 .v-midle{
@@ -18,7 +19,7 @@ body {
 
 button{
     height: 40px;
-    background-color: #3F51B5;
+    background-color: #089944;
     border: none;
     cursor: pointer;
     padding: 5px 10px;

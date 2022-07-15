@@ -84,9 +84,15 @@
 }
 
 .edit{
-    color: green;
+    color: #089944;
 }
 
 .remove{
-    color: red;
+    color: rgb(204, 14, 71);
+}
+
+.option{
+    background-color: transparent;
+    box-shadow: none;
+    width: 40px;
 }
