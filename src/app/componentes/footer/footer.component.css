@@ -1,0 +1,24 @@
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #089944;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+
+a{
+    text-decoration: underline;
+}

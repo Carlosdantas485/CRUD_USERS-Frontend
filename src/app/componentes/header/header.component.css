@@ -1,0 +1,37 @@
+.header{
+    padding: 10px 0;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #389AD3;
+    box-shadow: 1px 1px 5px 1px rgb(247, 247, 247);
+}
+
+.logo{
+    width: 100px;
+}
+
+.options-header{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-header-option{
+    margin-left: 10px;
+}
+
+.item-header-option:hover{
+    color: rgb(0, 255, 76);
+    transition: 0.5s;
+}
+
+h1,p,h2,h3,h4{
+    margin: 0;
+
+}
